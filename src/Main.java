@@ -21,6 +21,9 @@ public class Main {
         System.out.println("PRODUCTS OF THE ELEMENTS: " + multiplyArrayElements(userArray));
         
         scanner.close();
+        
+        userArray = reverseArray(userArray);
+        System.out.println(Arrays.toString(userArray));
 
     }
 
