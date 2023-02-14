@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class Main {
 	
@@ -30,5 +31,11 @@ public class Main {
     public static int multiplyArrayElements(int[] givenArray) {
         return Arrays.stream(givenArray).boxed().reduce(1, (a, b) -> a * b);
     }
+    
+    public static int[] reverseArray(int[] givenArray) {
+        return IntStream.rangeClosed(1, givenArray.length)
+              .map(i -> givenArray[givenArray.length - i])
+              .toArray();
+   }
 	
 }
