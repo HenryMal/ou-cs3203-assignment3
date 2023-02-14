@@ -24,6 +24,11 @@ public class Main {
         
         userArray = reverseArray(userArray);
         System.out.println(Arrays.toString(userArray));
+        
+        // i have seen people die in front of my eyes.
+        // these memories are etched into the back of my
+        // mind and i get paranoid.
+
 
     }
 
